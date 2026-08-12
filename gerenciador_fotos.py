@@ -22,7 +22,7 @@ class GerenciadorFotos:
         self.Executar()
         pass
 
-    def __copiar_com_timeout(self, origem, destino, timeout=15):
+    def __copiar_com_timeout(self, origem, destino, timeout=60):
         # Cria um processo separado para realizar a cópia
         processo = multiprocessing.Process(target=shutil.copy2, args=(origem, destino))
         processo.start()

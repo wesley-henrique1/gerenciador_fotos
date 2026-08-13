@@ -43,11 +43,15 @@ O script **`GerenciadorFotos`** atua de forma resiliente para extrair as mídias
 - 📝 **Registro de Erros (Logs):** Mapeia os arquivos que falharam durante a leitura no dicionário `dicERROR` para posterior verificação.
 
 <div align="center">
-  <img src="img/amostra.png" width="280" alt="amostra projeto">
-  <br><br>
-  <video src="img/demonstracao.mp4" width="600" controls poster="img/amostra.png">
-    Seu navegador não suporta a exibição deste vídeo.
-  </video>
+    <p>Projeto antes de iniciar</p>
+    <img src="img/amostra.png" width="1000" alt="amostra projeto">
+    <br><br>
+    <p>Projeto em ação</p>
+    <img src="img/amostra_2.png" width="1000" alt="amostra projeto">
+    <br><br>
+    <video src="img/demonstracao.mp4" width="1000" controls poster="img/amostra.png">
+        Seu navegador não suporta a exibição deste vídeo.
+    </video>
 </div>
 
 ---

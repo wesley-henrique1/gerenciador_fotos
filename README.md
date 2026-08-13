@@ -33,18 +33,24 @@ A urgência de digitalizar esses arquivos antes da perda definitiva das fotos le
 ---
 
 ### ⚡ Solução Automatizada
-O script GerenciadorFotos atua de forma resiliente para extrair as mídias minimizando o impacto no sistema:
 
-- 🔍 Mapeamento Recursivo: Varre diretórios e subpastas na mídia de origem.
+O script **`GerenciadorFotos`** atua de forma resiliente para extrair as mídias minimizando o impacto no sistema:
 
-- 🖼️ Filtro de Extensões: Identifica e seleciona formatos válidos de imagem (ex: .jpg, .jpeg).
+- 🔍 **Mapeamento Recursivo:** Varre diretórios e subpastas na mídia de origem.
+- 🖼️ **Filtro de Extensões:** Identifica e seleciona formatos válidos de imagem (ex: `.jpg`, `.jpeg`).
+- 🚚 **Cópia e Padronização:** Move e renomeia os arquivos para a pasta de destino do projeto para manter a organização.
+- 🛡️ **Tratamento de Exceções:** Falhas em arquivos corrompidos/arranhados são isoladas sem congelar a aplicação ou o sistema operacional.
+- 📝 **Registro de Erros (Logs):** Mapeia os arquivos que falharam durante a leitura no dicionário `dicERROR` para posterior verificação.
 
-- 🚚 Cópia e Padronização: Move e renomeia os arquivos para a pasta de destino do projeto para manter a organização.
+<div align="center">
+  <img src="img/amostra.png" width="280" alt="amostra projeto">
+  <br><br>
+  <video src="img/demonstracao.mp4" width="600" controls poster="img/amostra.png">
+    Seu navegador não suporta a exibição deste vídeo.
+  </video>
+</div>
 
-- 🛡️ Tratamento de Exceções: Falhas em arquivos corrompidos/arranhados são isoladas sem congelar a aplicação ou o sistema operacional.
-
-- 📝 Registro de Erros (Logs): Mapeia os arquivos que falharam durante a leitura no dicionário dicERROR para posterior verificação.
-
+---
 ### 🛠️ Tecnologias e Módulos
 
 O projeto utiliza puramente a biblioteca padrão do Python, dispensando instalações adicionais:
@@ -57,6 +63,15 @@ O projeto utiliza puramente a biblioteca padrão do Python, dispensando instala�
 ## 📁 Estrutura do Projeto
 
 ```text
-├── gerenciador_fotos.py   # Script principal (Classe GerenciadorFotos e lógica de extração)
-├── README.md              # Documentação do projeto
-└── Acumulado/             # Diretório de destino centralizado das fotos organizadas
+├── 📁 Acumulado
+├── 📁 img
+│   ├── 🖼️ FleshPerfil.png
+│   ├── 🖼️ amostra.png
+│   └── 🎬 demonstracao.mp4
+├── ⚙️ .gitignore
+├── 📄 LICENSE
+├── 📝 README.md
+└── 🐍 gerenciador_fotos.py
+```
+
+---
